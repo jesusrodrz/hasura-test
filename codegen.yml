@@ -1,7 +1,7 @@
 schema:
   ${REACT_APP_HASURA_SCHEMA}:
     headers:
-      "x-hasura-admin-secret": ${HASURA_ADMIN_SECRECT}
+      "x-hasura-admin-secret": ${HASURA_ADMIN_SECRET}
 documents: "./src/**/*.graphql"
 generates:
   ./src/shared/types/generated.ts:
