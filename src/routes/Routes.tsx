@@ -2,7 +2,6 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import { Route, Routes as RouterRoutes } from "react-router-dom";
 import { Public } from "../modules/public/Public";
 import { Dashboard } from "../modules/dashboard/Dashboard";
-import { Auth } from "./Auth";
 import { useAuth0 } from "@auth0/auth0-react";
 
 export const Routes = (): JSX.Element => {
@@ -14,11 +13,9 @@ export const Routes = (): JSX.Element => {
       ) : (
         <RouterRoutes>
           <Route path="/" element={<Public />} />
-          <Route path="/auth" element={<Auth />} />
           <Route path="public" element={<Public />} />
           <Route element={<ProtectedRoute />}>
             <Route path="dashboard" element={<Dashboard path="1" />} />
-            <Route path="dashboard2" element={<Dashboard path="2" />} />
           </Route>
         </RouterRoutes>
       )}
