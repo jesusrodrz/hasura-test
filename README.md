@@ -27,6 +27,7 @@ REACT_APP_AUTH0_SCOPE="auth scopes"
 ### Auth0
 
 in order to the app to work a API audience must be created in `Applications>APIs` on the auth0 dashboard
+this identifier will be the  `AUTH0_AUDIENCE` variable
 
 ![image](https://user-images.githubusercontent.com/34176666/172035378-493f395a-9da9-4837-a572-87881ba7787c.png)
 
